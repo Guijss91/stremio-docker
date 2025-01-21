@@ -9,6 +9,6 @@ services:
     ports:
       - "8080:8080"
       - "11470:11470"  # Apenas um dos dois deve ser suficiente
-      #- "12470:12470"
+      - "12470:12470"
     volumes:
       - "/srv/config/stremio/:/root/.stremio-server"  # Pasta padrão dos volumes do Docker
