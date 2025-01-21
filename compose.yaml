@@ -3,7 +3,7 @@ services:
     image: tsaridas/stremio-docker:latest
     restart: unless-stopped
     environment:
-      NO_CORS: 1
+      #NO_CORS: 1
       IPADDRESS: 198.7.124.122
     ports:
       - "8080:8080"
