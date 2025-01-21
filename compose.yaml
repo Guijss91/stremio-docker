@@ -4,10 +4,11 @@ services:
     restart: unless-stopped
     environment:
       NO_CORS: 1
-      #IPADDRESS: 192.168.1.10 # Setup your ip address here
+      IPADDRESS: 198.7.124.122  # Seu IP fornecido
+      DOMAIN: https://$(PRIMARY_DOMAIN)
     ports:
       - "8080:8080"
-      - "11470:11470" # Just one of the two should be enough
-      - "12470:12470"
+      - "11470:11470"  # Apenas um dos dois deve ser suficiente
+      #- "12470:12470"
     volumes:
-      - "/srv/config/stremio/:/root/.stremio-server" # set the first part to your local folder. Its not required though
+      - "/srv/config/stremio/:/root/.stremio-server"  # Pasta padrão dos volumes do Docker
