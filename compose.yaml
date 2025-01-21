@@ -5,7 +5,7 @@ services:
     environment:
       NO_CORS: 1
       IPADDRESS: 198.7.124.122  # Seu IP fornecido
-      DOMAIN: https://$(PRIMARY_DOMAIN)
+      DOMAIN: https://laboratorio-stremio.nu7ixt.easypanel.host
     ports:
       - "8080:8080"
       - "11470:11470"  # Apenas um dos dois deve ser suficiente
