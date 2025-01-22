@@ -3,11 +3,13 @@ services:
     image: tsaridas/stremio-docker:latest
     restart: unless-stopped
     environment:
-      #NO_CORS: 1
+      WEBUI_LOCATION: http://198.7.124.122:8080
+      SERVER_URL: http://http://198.7.124.122:11470
+      NO_CORS: 1
       IPADDRESS: 198.7.124.122
     ports:
       - "8080:8080"
       - "11470:11470" 
-      - "12470:12470"
+      #- "12470:12470"
     volumes:
       - "/srv/config/stremio/:/root/.stremio-server" 
